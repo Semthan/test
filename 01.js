@@ -9,6 +9,7 @@ FizzBuzz är ett elementärt programmeringsproblem där man skriver ut tal i en 
 */
 
 
+
 for(let i=0; i<=100; i++){
    if(i%3==0 && i%5==0){
        console.log("fizzBuzz");
