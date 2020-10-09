@@ -16,9 +16,22 @@ Alla tecken som inte är a-z eller någon av ovanstående (t ex kommatecken, pun
 
 */
 
-function safe_string() {
+/*
+    Ö = &Ouml;&#x000D6;&#214;
+    Ä = &Auml;&#x000C4;&#196;
+    Å = &Aring;&#x000C5;&#197;
+*/ 
+
+
+function safe_string(str) {
+    str = " ".replace(/ö/g, "&Ouml;&#x000D6;&#214;")
 
 }
 
-console.log( safe_string( "<h1>Sjörövare, O'hoj</h1>" ) ); // Expected output: &lt;h1&gt;Sj&ouml;r&ouml;vare O&apos;hoj&lt;/h1&gt;
+//let stri = "över ".replace(/ö/g, "&Ouml;&#x000D6;&#214;")
+
+//console.log(stri)
+
+
+console.log( safe_string("över")); // Expected output: &lt;h1&gt;Sj&ouml;r&ouml;vare O&apos;hoj&lt;/h1&gt;
 

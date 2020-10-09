@@ -18,7 +18,7 @@ Exempel på värden och deras svar:
 
 */
 
-function get_average_sum() {
-    
+function get_average_sum(arr) {
+  arr = [];  
 }
 
