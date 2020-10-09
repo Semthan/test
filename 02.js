@@ -25,7 +25,7 @@ Alla tecken som inte är a-z eller någon av ovanstående (t ex kommatecken, pun
 
 function safe_string(str) {
     str = " ".replace(/ö/g, "&Ouml;&#x000D6;&#214;")
-
+ 
 }
 
 //let stri = "över ".replace(/ö/g, "&Ouml;&#x000D6;&#214;")
